@@ -11,11 +11,11 @@ print ("")
 
 #input dimensions
 
-height = input("WHat is the height of one of your tanks? ")
-radius = input("What is the radius of one of your tanks?")
+height = float(input("WHat is the height of one of your tanks? "))
+radius = float(input("What is the radius of one of your tanks?"))
 
 #input coverage
-coverage = input("What area can be painted by one pot of paint? ") 
+coverage = float(input("What area can be painted by one pot of paint? ")) 
 
 #work out areas
 
@@ -30,3 +30,8 @@ number_of_pots=(total_area/coverage)
 
 #output pots of paint
 print (number_of_pots)
+
+whole_cans=int(number_of_pots+1)
+
+print ("")
+print("you wll need ", whole_cans, " complete cans of paint")
