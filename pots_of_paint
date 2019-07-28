@@ -1,0 +1,32 @@
+#The pot of paint problem
+#Spencer Organ
+#July 2019
+
+#Get input
+
+print ("How many tins of paint do you need to pain a tank")
+print ("")
+print ("Get Input")
+print ("")
+
+#input dimensions
+
+height = input("WHat is the height of one of your tanks? ")
+radius = input("What is the radius of one of your tanks?")
+
+#input coverage
+coverage = input("What area can be painted by one pot of paint? ") 
+
+#work out areas
+
+area_of_lid = (3.141*radius*radius)
+circumference = (3.14*2*radius)
+side_area=(circumference*height)
+total_area=(area_of_lid+side_area)
+
+#Work out number of number_of_pots
+
+number_of_pots=(total_area/coverage)
+
+#output pots of paint
+print (number_of_pots)
