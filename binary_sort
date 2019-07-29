@@ -1,0 +1,27 @@
+numbers = [10, 16, 23, 32, 37, 44, 56, 63, 72, 84, 91]
+min_index = 0
+max_index = len(numbers)
+
+valid = False
+
+while valid != True:
+    print(numbers)
+    sought = int(input("What number are you looking for? "))
+    if sought not in numbers:
+        print ("number is not in list")
+        valid = False
+    else:
+        valid = True
+        
+count = -1
+current = sought - 1
+while sought != current:
+    mid_index = int((max_index + min_index)/2)
+    print("Looking in:", numbers[min_index:max_index+1])
+    current = numbers[mid_index]
+    if sought > current:
+        min_index = mid_index + 1
+    else:
+        max_index = mid_index - 1
+    count = count + 1
+print("Found it in", count, "steps")
