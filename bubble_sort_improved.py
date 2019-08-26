@@ -1,7 +1,7 @@
 #Bubble sort by Spencer
 #!/usr/bin/python3
 
-from sense_hat import SenseHat
+from sense_emu import SenseHat
 from time import sleep
 from random import shuffle
 from random import *
