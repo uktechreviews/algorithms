@@ -1,4 +1,6 @@
 #Bubble sort by Spencer
+#Updated
+
 from sense_emu import SenseHat
 from time import sleep
 from random import *
